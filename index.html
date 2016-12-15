@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Intercepticon</title>
+		<script src="../libs/processing.min.js"></script>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			html, body, header, main {
+				margin: 0;
+				width: 100%;
+			}
+			header, main {
+				height: 50%;
+			}
+			html, body { 
+				height: 100%;
+				background-color: #000000;
+			}
+			* {
+				margin: 0;
+			}
+			canvas {
+				display: block;
+				padding: 0;
+				margin: 30 auto;
+			}
+		</style>
+	</head>
+	<body>
+				<canvas tabindex="0" contentEditable="true"  data-processing-sources="Characters.pde Controller.pde Math.pde Model.pde View.pde intercepticon.pde">
+		<span style="font-size: 4 px'">Written by Eric Welch, November 2016</span>
+		<script>
+			function dump_data() {
+				console.log("dumping data...");
+			}
+			window.onbeforeunload = function(){
+			  dump_data();
+			}
+		</script>
+	</body>
+</html>
